@@ -7,6 +7,7 @@
 				"cmake(VulkanHeaders)",
 				"pkgconfig(ImageMagick)",
 				"pkgconfig(OpenCL)",
+				"pkgconfig(chafa)",
 				"pkgconfig(dbus-1)",
 				"pkgconfig(dconf)",
 				"pkgconfig(ddcutil)",
@@ -21,6 +22,7 @@
 				"pkgconfig(vulkan)",
 				"pkgconfig(wayland-client)",
 				"pkgconfig(x11)",
+				"pkgconfig(xcb-randr)",
 				"pkgconfig(xrandr)",
 				"pkgconfig(zlib)"
 			],
@@ -81,6 +83,6 @@
 		}
 	},
 	"source-name": "fastfetch",
-	"source-release": "13",
+	"source-release": "15",
 	"source-version": "2.57.0"
 }
