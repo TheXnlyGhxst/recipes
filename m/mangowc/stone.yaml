@@ -5,7 +5,7 @@
 #
 name        : mangowc
 version     : 0.10.10
-release     : 1
+release     : 2
 homepage    : https://github.com/DreamMaoMao/mangowc
 upstreams   :
     - https://github.com/DreamMaoMao/mangowc/archive/refs/tags/0.10.10.tar.gz : 34c63ee8d7b6fa7404f21cbfcfd10141821aab216d3217a6de5eeac8f5a537c0
@@ -17,9 +17,7 @@ license     :
 builddeps   :
     - binary(g++)
     - binary(git)
-    - binary(meson)
-    - binary(Xwayland)
-    
+    - binary(meson)  
     - pkgconfig(hwdata)
     - pkgconfig(libdisplay-info)
     - pkgconfig(libdrm)
@@ -36,7 +34,9 @@ builddeps   :
     - pkgconfig(xi)
     - pkgconfig(xcb)
     - pkgconfig(xkbcommon)
-    - pkgconfig(xwayland)
+rundeps     :
+    - binary(foot) # Add default config terminal
+    - binary(Xwayland) # X11 support
 setup       : |
     %meson
 build       : |

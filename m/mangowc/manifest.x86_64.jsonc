@@ -4,7 +4,6 @@
 	"packages": {
 		"mangowc": {
 			"build-depends": [
-				"binary(Xwayland)",
 				"binary(g++)",
 				"binary(git)",
 				"binary(meson)",
@@ -23,10 +22,11 @@
 				"pkgconfig(wlroots)",
 				"pkgconfig(xcb)",
 				"pkgconfig(xi)",
-				"pkgconfig(xkbcommon)",
-				"pkgconfig(xwayland)"
+				"pkgconfig(xkbcommon)"
 			],
 			"depends": [
+				"binary(Xwayland)",
+				"binary(foot)",
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libinput.so.10(x86_64))",
@@ -52,6 +52,6 @@
 		}
 	},
 	"source-name": "mangowc",
-	"source-release": "1",
+	"source-release": "2",
 	"source-version": "0.10.10"
 }
